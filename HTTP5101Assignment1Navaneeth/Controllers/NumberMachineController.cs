@@ -16,7 +16,7 @@ namespace HTTP5101Assignment1Navaneeth.Controllers
         /// <param name="id">Integer ID</param>
         /// <returns>A string of of the result of all above calculation, stored as IEnumerable string type </returns>
         /// <example>
-        /// GET api/values/5
+        /// GET api/NumberMachine/5
         /// </example>
         public IEnumerable<string> Get(int id)
         {
