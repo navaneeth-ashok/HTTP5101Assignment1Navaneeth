@@ -24,6 +24,9 @@ namespace HTTP5101Assignment1Navaneeth.Controllers
         /// </summary>
         /// <param name="id">Integer id, number of days elapsed since the beginning of hosting</param>
         /// <returns>String array of strings, containing ( total_excluding tax, tax_rate, total amount)</returns>
+        /// <example>
+        /// GET api/HostingCost/10
+        /// </example>
 
         public IEnumerable<string> Get (int id) 
         {

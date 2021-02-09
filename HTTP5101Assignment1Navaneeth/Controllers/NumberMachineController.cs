@@ -8,14 +8,16 @@ using System.Web.Http;
 namespace HTTP5101Assignment1Navaneeth.Controllers
 {
     public class NumberMachineController : ApiController
-    {   
-        // GET api/values/5
+    {
         /// <summary>
         /// Method receives an integer input and calculates floor of half of id, ceil of half of id, 
         /// square of id and square root of id
         /// </summary>
         /// <param name="id">Integer ID</param>
         /// <returns>A string of of the result of all above calculation, stored as IEnumerable string type </returns>
+        /// <example>
+        /// GET api/values/5
+        /// </example>
         public IEnumerable<string> Get(int id)
         {
             double division_result = id / 2.0;
