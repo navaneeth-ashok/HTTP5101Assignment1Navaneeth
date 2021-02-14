@@ -30,6 +30,14 @@ namespace HTTP5101Assignment1Navaneeth.Controllers
 
         public IEnumerable<string> Get (int id) 
         {
+            if( id < 0)
+            {
+                return new string[]
+                {
+                    "Error: Invalid Input",
+                    "Error Info: The number of days can not be less than 0"
+                };
+            }
             double rate = 5.50;
             double tax_rate = 0.13; // 13%
             // # of fortnights counted = ( floor division of the input by 14 ) + 1
